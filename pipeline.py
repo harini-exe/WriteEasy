@@ -1,24 +1,17 @@
 """
-IMU Handwriting Recognition using Dynamic Time Warping (DTW)
-============================================================
-
-Dataset structure:
-
-WriteEasy/
- ├── TRAINING DATASETS/
- │     ├── A/
- │     ├── C/
- │     └── X/
- ├── TESTINGDATA/
- └── outputs/
+WriteEasy — IMU Handwriting Recognition Pipeline
+=================================================
+Algorithm: Dynamic Time Warping (DTW) + K-Nearest Neighbours (KNN)
 
 Pipeline:
-1. Load IMU CSV
-2. Resample sequence
-3. Normalize signals
-4. Smooth noise
-5. DTW comparison
-6. k-NN voting for prediction
+1. Load IMU CSV (ax, ay, az, gx, gy, gz)
+2. Resample sequence to fixed length (120 samples)
+3. Z-score normalize per feature axis
+4. Exponential smoothing for noise reduction
+5. DTW distance computation with Sakoe-Chiba band constraint
+6. KNN voting (K=5) for final character prediction
+
+Note: Training dataset not included in repository.
 """
 
 import os
