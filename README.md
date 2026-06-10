@@ -1,5 +1,8 @@
 # WriteEasy — IMU-Based Handwriting Recognition System for Dyslexia Support
 
+This repository contains my individual software contribution 
+to WriteEasy, a team project developed for Kurukshetra 2026.
+
 ## Overview
 WriteEasy is a sensor-integrated assistive writing system designed 
 to help children with dyslexia improve handwriting through 
