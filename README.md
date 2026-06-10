@@ -52,7 +52,7 @@ Built as part of Kurukshetra 2026 inter-college competition —
 
 ## Results
 
-**Overall Accuracy: 97%** on 36 test samples (A, C, X classes)
+**Overall Accuracy: 97%** on 180 test samples (A, C, X classes)
 
 | Class | Precision | Recall | F1-Score | Support |
 |-------|-----------|--------|----------|---------|
